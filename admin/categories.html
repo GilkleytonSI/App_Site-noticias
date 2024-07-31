@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Categorias e Tags</title>
+    <link rel="stylesheet" href="assets/css/admin-styles.css">
+</head>
+<body>
+    <header id="admin-header"></header>
+
+    <main>
+        <div class="container">
+            <h1>Gerenciamento de Categorias e Tags</h1>
+            <p>Aqui você pode gerenciar as categorias e tags do site.</p>
+            <!-- Formulário para criar nova categoria/tag -->
+            <div class="form-section">
+                <input type="text" id="new-category" placeholder="Nova Categoria">
+                <button id="add-category">Adicionar Categoria</button>
+                <input type="text" id="new-tag" placeholder="Nova Tag">
+                <button id="add-tag">Adicionar Tag</button>
+            </div>
+
+             <!-- Lista de categorias -->
+             <h2>Categorias</h2>
+             <table class="categories-table">
+                 <thead>
+                     <tr>
+                         <th>Nome</th>
+                         <th>Ações</th>
+                     </tr>
+                 </thead>
+                 <tbody id="categories-list">
+                     <!-- Categorias serão inseridas aqui pelo JavaScript -->
+                 </tbody>
+             </table>
+
+             <!-- Lista de tags -->
+            <h2>Tags</h2>
+            <table class="tags-table">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="tags-list">
+                    <!-- Tags serão inseridas aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer id="admin-footer"></footer>
+
+    <script src="assets/js/admin-scripts.js"></script>
+</body>
+</html>

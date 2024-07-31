@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Artigos</title>
+    <link rel="stylesheet" href="assets/css/admin-styles.css">
+</head>
+<body>
+    <header id="admin-header"></header>
+
+    <main>
+        <div class="container">
+            <h1>Gerenciamento de Artigos</h1>
+            <p>Aqui você pode gerenciar os artigos do site.</p>
+            <!-- Ferramentas de busca e filtragem -->
+            <div class="filter-tools">
+                <input type="text" id="search" placeholder="Buscar artigos...">
+                <select id="status-filter">
+                    <option value="all">Todos</option>
+                    <option value="draft">Rascunho</option>
+                    <option value="pending">Aguardando Aprovação</option>
+                    <option value="published">Publicado</option>
+                </select>
+                <button id="create-article">Criar Novo Artigo</button>
+            </div>
+
+            <!-- Lista de artigos -->
+            <table class="articles-table">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Status</th>
+                        <th>Data</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="articles-list">
+                    <!-- Artigos serão inseridos aqui pelo JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer id="admin-footer"></footer>
+
+    <script src="assets/js/admin-scripts.js"></script>
+</body>
+</html>

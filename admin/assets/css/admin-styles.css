@@ -1,0 +1,340 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.admin-header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.admin-header h1 {
+    margin: 0;
+}
+
+.admin-header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.admin-header nav ul li {
+    margin: 0 1rem;
+}
+
+.admin-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.admin-footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.site-stats {
+    margin-top: 2rem;
+}
+
+.site-stats h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.stat p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+/* ... estilos da pagina artigos ... */
+
+.filter-tools {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.filter-tools input,
+.filter-tools select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
+
+.filter-tools button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.filter-tools button:hover {
+    background-color: #555;
+}
+
+.articles-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.articles-table th,
+.articles-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.articles-table th {
+    background-color: #f4f4f4;
+}
+
+.articles-table td {
+    background-color: #fff;
+}
+
+.articles-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.articles-table .actions button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.articles-table .actions .edit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.articles-table .actions .delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.articles-table .actions .review {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.articles-table .actions .approve {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.articles-table .actions button:hover {
+    opacity: 0.8;
+}
+
+
+/* ... estilos da pagina categorias ... */
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-section input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.form-section button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: #555;
+}
+
+.categories-table,
+.tags-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.categories-table th,
+.categories-table td,
+.tags-table th,
+.tags-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.categories-table th,
+.tags-table th {
+    background-color: #f4f4f4;
+}
+
+.categories-table td,
+.tags-table td {
+    background-color: #fff;
+}
+
+.categories-table tr:hover,
+.tags-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.categories-table .actions button,
+.tags-table .actions button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.categories-table .actions .edit,
+.tags-table .actions .edit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.categories-table .actions .delete,
+.tags-table .actions .delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.categories-table .actions button:hover,
+.tags-table .actions button:hover {
+    opacity: 0.8;
+}
+
+
+/* Estilos adicionais para o gerenciamento de usuários */
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.users-table th, .users-table td {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.users-table th {
+    background-color: #f4f4f4;
+}
+
+.users-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.users-table .actions button {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.users-table .actions .edit {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.users-table .actions .delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.users-table .actions button:hover {
+    opacity: 0.8;
+}
+
+
+/* Estilos adicionais para as configurações do site */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.form-section input,
+.form-section textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-section button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-section button:hover {
+    background-color: #0056b3;
+}
+

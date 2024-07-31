@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Configurações do Site</title>
+    <link rel="stylesheet" href="assets/css/admin-styles.css">
+</head>
+<body>
+    <header id="admin-header"></header>
+
+    <main>
+        <div class="container">
+            <h1>Configurações do Site</h1>
+            <p>Aqui você pode ajustar as configurações do site.</p>
+
+            <section class="form-section">
+                <h2>Configurações Gerais</h2>
+                <input type="text" id="site-name" placeholder="Nome do Site">
+                <input type="text" id="site-logo" placeholder="URL do Logo">
+                <input type="color" id="primary-color" value="#000000">
+                <input type="color" id="secondary-color" value="#ffffff">
+                <button id="save-general-settings">Salvar Configurações Gerais</button>
+            </section>
+
+            <section class="form-section">
+                <h2>Configurações de SEO</h2>
+                <input type="text" id="meta-title" placeholder="Título Meta">
+                <textarea id="meta-description" placeholder="Descrição Meta"></textarea>
+                <button id="save-seo-settings">Salvar Configurações de SEO</button>
+            </section>
+
+            <section class="form-section">
+                <h2>Configurações de Redes Sociais</h2>
+                <input type="text" id="facebook-url" placeholder="URL do Facebook">
+                <input type="text" id="instagram-url" placeholder="URL do Instagram">
+                <button id="save-social-settings">Salvar Configurações de Redes Sociais</button>
+            </section>
+        </div>
+    </main>
+
+    <footer id="admin-footer"></footer>
+
+    <script src="assets/js/admin-scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="assets/css/admin-styles.css">
+</head>
+<body>
+    <header id="admin-header"></header>
+
+    <main>
+        <div class="container">
+            <h1>Gerenciamento de Usuários</h1>
+            <p>Aqui você pode gerenciar os usuários do site.</p>
+            <section class="form-section">
+                <h2>Adicionar Novo Usuário</h2>
+                <input type="text" id="new-user-name" placeholder="Nome do Usuário">
+                <input type="text" id="new-user-email" placeholder="Email do Usuário">
+                <select id="new-user-role">
+                    <option value="Journalist">Jornalista</option>
+                    <option value="Editor">Editor</option>
+                    <option value="Administrator">Administrador</option>
+                </select>
+                <button id="add-user">Adicionar Usuário</button>
+            </section>
+
+            <section>
+                <h2>Lista de Usuários</h2>
+                <table class="users-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Permissão</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="users-list">
+                        <!-- Lista de usuários será inserida aqui -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer id="admin-footer"></footer>
+
+    <script src="assets/js/admin-scripts.js"></script>
+</body>
+</html>
