@@ -8,20 +8,42 @@
 </head>
 <body>
     <div id="header"></div>
-    <div id="sidebar"></div>
     <main>
-        <section id="highlights">
-            <h2>Destaques</h2>
-            <!-- Destaques serão carregados aqui -->
-        </section>
-        <section id="categories">
-            <h2>Categorias</h2>
-            <!-- Links para categorias serão carregados aqui -->
-        </section>
-        <section id="latest-news">
-            <h2>Últimas Notícias</h2>
-            <!-- Lista de últimas notícias será carregada aqui -->
-        </section>
+        <div class="container">
+            <section id="highlights">
+                <h2>Destaques</h2>
+                <div class="highlight">
+                    <img src="assets/images/blog-1.jpg" alt="Notícia em destaque">
+                    <h3>Título da Notícia em Destaque 1</h3>
+                    <p>Resumo da notícia em destaque 1...</p>
+                </div>
+                <div class="highlight">
+                    <img src="assets/images/blog-2.jpg" alt="Notícia em destaque">
+                    <h3>Título da Notícia em Destaque 2</h3>
+                    <p>Resumo da notícia em destaque 2...</p>
+                </div>
+            </section>
+            <section id="categories">
+                <h2>Categorias</h2>
+                <ul>
+                    <li><a href="category.html">Transferências</a></li>
+                    <li><a href="category.html">Partidas</a></li>
+                    <li><a href="category.html">Jogadores</a></li>
+                    <li><a href="category.html">Técnicos</a></li>
+                </ul>
+            </section>
+            <section id="latest-news">
+                <h2>Últimas Notícias</h2>
+                <div class="news-item">
+                    <h3><a href="article.html">Título da Última Notícia 1</a></h3>
+                    <p>Resumo da última notícia 1...</p>
+                </div>
+                <div class="news-item">
+                    <h3><a href="article.html">Título da Última Notícia 2</a></h3>
+                    <p>Resumo da última notícia 2...</p>
+                </div>
+            </section>
+        </div> 
     </main>
     <div id="footer"></div>
     <script src="assets/js/scripts.js"></script>
