@@ -79,22 +79,37 @@ main {
     padding: 2rem;
 }
 
-#highlights, #categories, #latest-news {
+#highlights {
     margin-bottom: 2rem;
 }
 
-.highlight {
+.highlights-container {
     display: flex;
-    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.highlight img {
-    height: 100px;
-    margin-right: 1rem;
+.highlight-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(33.333% - 1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.highlight h3 {
-    margin-top: 0;
+.highlight-card img {
+    width: 100%;
+    height: auto;
+}
+
+.highlight-card h3 {
+    margin: 0.5rem;
+}
+
+.highlight-card p {
+    margin: 0.5rem;
+    color: #555;
 }
 
 #categories ul {
@@ -175,4 +190,16 @@ h1, h2 {
 
 #contact-form button:hover {
     background-color: #0056b3;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .highlights-container {
+        flex-direction: column;
+    }
+
+    .highlight-card {
+        width: 100%;
+    }
 }
